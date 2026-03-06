@@ -428,6 +428,7 @@ em {
 
 .menu-toggle.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
+    background-color: var(--color-primary-dark);
 }
 
 .menu-toggle.active span:nth-child(2) {
@@ -436,6 +437,12 @@ em {
 
 .menu-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+    background-color: var(--color-primary-dark);
+}
+
+.menu-toggle:active {
+    opacity: 0.7;
+    transform: scale(0.95);
 }
 
 @media (min-width: 768px) {
@@ -481,6 +488,24 @@ em {
     padding: var(--space-3) 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     opacity: 0.8;
+}
+
+.mobile-cta-item {
+    display: flex;
+    width: 100%;
+    margin-top: var(--space-4);
+}
+
+.mobile-cta-item .btn {
+    width: 100%;
+    justify-content: center;
+    padding: var(--space-4);
+}
+
+@media (min-width: 768px) {
+    .mobile-cta-item {
+        display: none !important;
+    }
 }
 
 .nav.mobile .nav-link:hover {
@@ -2026,6 +2051,21 @@ em {
     box-shadow: var(--shadow-lg);
     z-index: var(--z-float);
     transition: all var(--transition-base);
+    animation: pulseWpp 2s infinite;
+}
+
+@keyframes pulseWpp {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.8), 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    70% {
+        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0), 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
 }
 
 .whatsapp-float:hover {
