@@ -13,7 +13,10 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cookie-banner.css">
+
+    <!-- CSS Assíncrono para o Cookie Banner (Não-crítico) -->
+    <link rel="preload" href="cookie-banner.css" as="style">
+    <link rel="stylesheet" href="cookie-banner.css" media="print" onload="this.media='all'">
 
     <!-- Preload Assets Críticos (LCP & Performance) -->
     <link rel="preload"
@@ -28,8 +31,8 @@
     <meta property="og:description"
         content="Há 18 anos dedicados à saúde bucal com ética e cuidado no coração de Realengo. Conheça nossos tratamentos.">
     <meta property="og:image"
-        content="https://seudenterealengo.com.br/assets/clinica+odontologica+seu+dente-odontologia-dentista-implante+dentario-em-realengo-rio+de+janeiro-rj%20(5).webp">
-    <meta property="og:url" content="https://seudenterealengo.com.br/">
+        content="https://www.seudente.ag5agencia.site/assets/clinica+odontologica+seu+dente-odontologia-dentista-implante+dentario-em-realengo-rio+de+janeiro-rj%20(5).webp">
+    <meta property="og:url" content="https://www.seudente.ag5agencia.site/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Clínica Odontológica Seu Dente">
     <meta property="og:locale" content="pt_BR">
@@ -37,10 +40,10 @@
     <meta name="twitter:title" content="Seu Dente | Odontologia Humanizada há 18 Anos">
     <meta name="twitter:description" content="Há 18 anos cuidando do seu sorriso com excelência em Realengo, RJ.">
     <meta name="twitter:image"
-        content="https://seudenterealengo.com.br/assets/clinica+odontologica+seu+dente-odontologia-dentista-implante+dentario-em-realengo-rio+de+janeiro-rj%20(5).webp">
+        content="https://www.seudente.ag5agencia.site/assets/clinica+odontologica+seu+dente-odontologia-dentista-implante+dentario-em-realengo-rio+de+janeiro-rj%20(5).webp">
 
     <!-- URL Canônica -->
-    <link rel="canonical" href="https://seudenterealengo.com.br/">
+    <link rel="canonical" href="https://www.seudente.ag5agencia.site/">
 
     <!-- Favicon -->
     <link rel="icon" href="assets/icon-empresa-original.webp" type="image/webp">
@@ -52,13 +55,13 @@
       "@graph": [
         {
           "@type": "Dentist",
-          "@id": "https://seudenterealengo.com.br/#negocio",
+          "@id": "https://www.seudente.ag5agencia.site/#negocio",
           "name": "Clínica Odontológica Seu Dente",
           "alternateName": "Seu Dente",
-          "url": "https://seudenterealengo.com.br/",
-          "logo": "https://seudenterealengo.com.br/assets/icon-empresa-original.webp",
+          "url": "https://www.seudente.ag5agencia.site/",
+          "logo": "https://www.seudente.ag5agencia.site/assets/icon-empresa-original.webp",
           "image": [
-            "https://seudenterealengo.com.br/assets/clinica+odontologica+seu+dente-odontologia-dentista-implante+dentario-em-realengo-rio+de+janeiro-rj%20(5).webp"
+            "https://www.seudente.ag5agencia.site/assets/clinica+odontologica+seu+dente-odontologia-dentista-implante+dentario-em-realengo-rio+de+janeiro-rj%20(5).webp"
           ],
           "description": "Clínica Odontológica Seu Dente - 18 anos cuidando do seu sorriso com excelência em Realengo, RJ.",
           "telephone": "+55-21-2401-8334",
@@ -121,7 +124,7 @@
                   "name": "Implante Dentário",
                   "description": "Recupere sua mastigação e autoestima com implantes de alta qualidade e durabilidade.",
                   "areaServed": "Rio de Janeiro – RJ",
-                  "provider": { "@id": "https://seudenterealengo.com.br/#negocio" }
+                  "provider": { "@id": "https://www.seudente.ag5agencia.site/#negocio" }
                 }
               },
               {
@@ -131,7 +134,7 @@
                   "name": "Prótese Dentária",
                   "description": "Próteses fixas e removíveis que devolvem a funcionalidade e beleza natural do sorriso.",
                   "areaServed": "Rio de Janeiro – RJ",
-                  "provider": { "@id": "https://seudenterealengo.com.br/#negocio" }
+                  "provider": { "@id": "https://www.seudente.ag5agencia.site/#negocio" }
                 }
               },
               {
@@ -141,7 +144,7 @@
                   "name": "Clareamento Dental",
                   "description": "Sorriso mais branco e radiante com técnicas seguras e resultados duradouros.",
                   "areaServed": "Rio de Janeiro – RJ",
-                  "provider": { "@id": "https://seudenterealengo.com.br/#negocio" }
+                  "provider": { "@id": "https://www.seudente.ag5agencia.site/#negocio" }
                 }
               },
               {
@@ -151,7 +154,7 @@
                   "name": "Ortodontia",
                   "description": "Alinhamento dental com aparelhos modernos e tratamentos personalizados.",
                   "areaServed": "Rio de Janeiro – RJ",
-                  "provider": { "@id": "https://seudenterealengo.com.br/#negocio" }
+                  "provider": { "@id": "https://www.seudente.ag5agencia.site/#negocio" }
                 }
               },
               {
@@ -161,7 +164,7 @@
                   "name": "Tratamento de Canal",
                   "description": "Endodontia com técnicas avançadas para salvar seu dente e eliminar dores.",
                   "areaServed": "Rio de Janeiro – RJ",
-                  "provider": { "@id": "https://seudenterealengo.com.br/#negocio" }
+                  "provider": { "@id": "https://www.seudente.ag5agencia.site/#negocio" }
                 }
               },
               {
@@ -171,7 +174,7 @@
                   "name": "Facetas e Estética",
                   "description": "Transforme seu sorriso com facetas de porcelana e procedimentos estéticos personalizados.",
                   "areaServed": "Rio de Janeiro – RJ",
-                  "provider": { "@id": "https://seudenterealengo.com.br/#negocio" }
+                  "provider": { "@id": "https://www.seudente.ag5agencia.site/#negocio" }
                 }
               }
             ]
@@ -184,31 +187,32 @@
             "worstRating": "1"
           },
           "sameAs": [
-            "https://share.google/ee7phTTc5PPBQcjTp",
+            "https://www.google.com/maps?sca_esv=5e11387e8a170f54&output=search&q=clinica+odontologica+seu+dente+realengo&source=lnms&fbs=ADc_l-acAb_3MMOAUx0zmbUpgBqRiigBgL2I_pgQa-94zvB056b93wKmVeAAORa3GINFZT7EtWOjOKQzUFIqb90RiX8rNcs5F0v98InAxDSU2b19EOl5YMyaKmP1ckRW5CSptwhIJGTvQo2j5vYJuS99CCH71GpyLcxL3gXTJT79aSm5ul7DRfOghkM-15ewpryW0slpm3e0eoBNDLMbTLXwStQvbA2y2A&entry=mc&ved=1t:200715&ictx=111",
+            "https://share.google/W7L02RHiosuj7Kzho"
             "https://instagram.com/seudenterealengo"
           ]
         },
         {
           "@type": "WebSite",
-          "@id": "https://seudenterealengo.com.br/#website",
-          "url": "https://seudenterealengo.com.br/",
+          "@id": "https://www.seudente.ag5agencia.site/#website",
+          "url": "https://www.seudente.ag5agencia.site/",
           "name": "Clínica Odontológica Seu Dente",
-          "publisher": { "@id": "https://seudenterealengo.com.br/#negocio" },
+          "publisher": { "@id": "https://www.seudente.ag5agencia.site/#negocio" },
           "inLanguage": "pt-BR"
         },
         {
           "@type": "WebPage",
-          "@id": "https://seudenterealengo.com.br/#webpage",
-          "url": "https://seudenterealengo.com.br/",
+          "@id": "https://www.seudente.ag5agencia.site/#webpage",
+          "url": "https://www.seudente.ag5agencia.site/",
           "name": "Seu Dente | Odontologia Humanizada há 18 Anos",
           "description": "Clínica Odontológica Seu Dente - 18 anos cuidando do seu sorriso com excelência em Realengo, RJ.",
-          "isPartOf": { "@id": "https://seudenterealengo.com.br/#website" },
-          "about": { "@id": "https://seudenterealengo.com.br/#negocio" },
+          "isPartOf": { "@id": "https://www.seudente.ag5agencia.site/#website" },
+          "about": { "@id": "https://www.seudente.ag5agencia.site/#negocio" },
           "inLanguage": "pt-BR"
         },
         {
           "@type": "FAQPage",
-          "@id": "https://seudenterealengo.com.br/#faq",
+          "@id": "https://www.seudente.ag5agencia.site/#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -332,7 +336,8 @@
             <div class="hero-image-wrapper">
                 <div class="hero-image">
                     <img src="assets/clinica+odontologica+seu+dente-odontologia-dentista-implante+dentario-em-realengo-rio+de+janeiro-rj%20(5).webp"
-                        alt="Clínica Odontológica Seu Dente - Realengo" width="600" height="800">
+                        alt="Clínica Odontológica Seu Dente - Realengo" width="600" height="800" fetchpriority="high"
+                        loading="eager">
                     <div class="hero-image-shape"></div>
                 </div>
                 <div class="floating-card">
@@ -432,11 +437,11 @@
                 <div class="sobre-images">
                     <div class="sobre-image-main">
                         <img src="assets/clinica+odontologica+seu+dente-odontologia-dentista-implante+dentario-em-realengo-rio+de+janeiro-rj%20(4).webp"
-                            alt="Equipe Seu Dente em Realengo" width="500" height="400">
+                            alt="Equipe Seu Dente em Realengo" width="500" height="400" loading="lazy">
                     </div>
                     <div class="sobre-image-secondary">
                         <img src="assets/clinica+odontologica+seu+dente-odontologia-dentista-implante+dentario-em-realengo-rio+de+janeiro-rj%20(3).webp"
-                            alt="Clínica Odontológica Seu Dente - Interior" width="300" height="250">
+                            alt="Clínica Odontológica Seu Dente - Interior" width="300" height="250" loading="lazy">
                     </div>
                     <div class="experience-badge">
                         <span class="exp-number">18</span>
@@ -1418,7 +1423,7 @@
         </div><!-- /.ck-modal__box -->
     </div><!-- /#ck-modal -->
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script src="cookie-banner.js" defer></script>
 </body>
 

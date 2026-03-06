@@ -13,7 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cookie-banner.css">
+    <!-- CSS Assíncrono para o Cookie Banner -->
+    <link rel="preload" href="cookie-banner.css" as="style">
+    <link rel="stylesheet" href="cookie-banner.css" media="print" onload="this.media='all'">
 
     <!-- Preload Assets Críticos -->
     <link rel="preload"
@@ -543,7 +545,7 @@
                 </div>
             </div>
 
-            <script src="script.js"></script>
+            <script src="script.js" defer></script>
             <script src="cookie-banner.js" defer></script>
 </body>
 

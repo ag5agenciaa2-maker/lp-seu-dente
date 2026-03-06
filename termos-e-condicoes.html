@@ -12,7 +12,9 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cookie-banner.css">
+    <!-- CSS Assíncrono para o Cookie Banner -->
+    <link rel="preload" href="cookie-banner.css" as="style">
+    <link rel="stylesheet" href="cookie-banner.css" media="print" onload="this.media='all'">
 
     <!-- Preload Assets Críticos -->
     <link rel="preload"
@@ -23,8 +25,8 @@
     <meta property="og:title" content="Termos e Condições - Clínica Odontológica Seu Dente">
     <meta property="og:description"
         content="Leia os termos de uso e condições da Clínica Odontológica Seu Dente em Realengo.">
-    <meta property="og:image" content="https://seudenterealengo.com.br/assets/icon-empresa-original.webp">
-    <meta property="og:url" content="https://seudenterealengo.com.br/termos-e-condicoes.html">
+    <meta property="og:image" content="https://www.seudente.ag5agencia.site/assets/icon-empresa-original.webp">
+    <meta property="og:url" content="https://www.seudente.ag5agencia.site/termos-e-condicoes.html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Clínica Odontológica Seu Dente">
     <meta property="og:locale" content="pt_BR">
@@ -32,10 +34,10 @@
     <meta name="twitter:title" content="Termos e Condições - Clínica Odontológica Seu Dente">
     <meta name="twitter:description"
         content="Leia os termos de uso e condições da Clínica Odontológica Seu Dente em Realengo.">
-    <meta name="twitter:image" content="https://seudenterealengo.com.br/assets/icon-empresa-original.webp">
+    <meta name="twitter:image" content="https://www.seudente.ag5agencia.site/assets/icon-empresa-original.webp">
 
     <!-- URL Canônica -->
-    <link rel="canonical" href="https://seudenterealengo.com.br/termos-e-condicoes.html">
+    <link rel="canonical" href="https://www.seudente.ag5agencia.site/termos-e-condicoes.html">
 
     <!-- Favicon -->
     <link rel="icon" href="assets/icon-empresa-original.webp" type="image/webp">
@@ -47,18 +49,18 @@
       "@graph": [
         {
           "@type": "WebSite",
-          "@id": "https://seudenterealengo.com.br/#website",
-          "url": "https://seudenterealengo.com.br/",
+          "@id": "https://www.seudente.ag5agencia.site/#website",
+          "url": "https://www.seudente.ag5agencia.site/",
           "name": "Clínica Odontológica Seu Dente",
           "inLanguage": "pt-BR"
         },
         {
           "@type": "WebPage",
-          "@id": "https://seudenterealengo.com.br/termos-e-condicoes.html#webpage",
-          "url": "https://seudenterealengo.com.br/termos-e-condicoes.html",
+          "@id": "https://www.seudente.ag5agencia.site/termos-e-condicoes.html#webpage",
+          "url": "https://www.seudente.ag5agencia.site/termos-e-condicoes.html",
           "name": "Termos e Condições - Clínica Odontológica Seu Dente",
           "description": "Leia os termos de uso e condições da Clínica Odontológica Seu Dente em Realengo.",
-          "isPartOf": { "@id": "https://seudenterealengo.com.br/#website" },
+          "isPartOf": { "@id": "https://www.seudente.ag5agencia.site/#website" },
           "inLanguage": "pt-BR"
         }
       ]
@@ -149,7 +151,7 @@
             <section>
                 <h2>1. Aceitação dos Termos</h2>
                 <p>Ao acessar o site da <strong>Clínica Odontológica Seu Dente</strong> (disponível em <a
-                        href="index.html">seudenterealengo.com.br</a>), você concorda em cumprir estes termos de
+                        href="index.html">www.seudente.ag5agencia.site</a>), você concorda em cumprir estes termos de
                     serviço, todas as leis e regulamentos aplicáveis e concorda que é responsável pelo cumprimento de
                     todas as leis locais aplicáveis.</p>
                 <p>Se você não concordar com algum destes termos, está proibido de usar ou acessar este site. Os
@@ -525,7 +527,7 @@
             </div>
         </div>
 
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
         <script src="cookie-banner.js" defer></script>
 </body>
 
