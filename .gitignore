@@ -1,0 +1,25 @@
+# Ignore dependencies
+node_modules/
+
+# Ignore sensitive files
+.env
+.DS_Store
+Thumbs.db
+
+# Ignore personal IDE config
+.vscode/
+.idea/
+
+# Ignore logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore custom folder specifically requested by user
+Skill´s Padrões AG5/
+"Skill´s Padrões AG5/"
+Skill*
+
+# Ignore Gemini artifacts/tmp
+tmp/
+.gemini/
