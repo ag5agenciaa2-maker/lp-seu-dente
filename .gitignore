@@ -23,3 +23,4 @@ Skill*
 # Ignore Gemini artifacts/tmp
 tmp/
 .gemini/
+.wrangler/
